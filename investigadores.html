@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investigadores</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Encabezado */
+    header h1 {
+      color: white;
+      background: linear-gradient(90deg, #0d47a1, #1976d2);
+      text-align: center;
+      padding: 15px;
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    /* Footer */
+    footer {
+      background: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    /* Botones del carrusel */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1);
+    }
+
+    /* Texto al lado de imágenes */
+    .carousel-text {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px;
+      color: #333;
+    }
+
+    .carousel-text h3 {
+      color: #0d47a1;
+      font-weight: bold;
+    }
+
+    /* Redes sociales con sprites */
+    .social-icon {
+      display: inline-block;
+      width: 64px;
+      height: 64px;
+      margin: 10px;
+      background: url('sprites.jpeg') no-repeat;
+      background-size: 256px 64px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icon:hover {
+      transform: scale(1.1);
+    }
+
+    .facebook {
+      background-position: -10px 0;
+    }
+
+    .twitter {
+      background-position: -95px 0;
+    }
+
+    .instagram {
+      background-position: -180px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Investigadores participantes</h1>
+  </header>
+
+  <!-- Carrusel -->
+  <main class="container mt-5">
+    <div id="carouselExampleControls" class="carousel slide shadow rounded" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slides (NO toqué contenido, solo se verán más elegantes con estilos Bootstrap) -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="d-block w-100 rounded" src="p1.jpeg" alt="First slide">
+            </div>
+            <div class="col-md-6 carousel-text">
+              <div>
+                <h3>Ana Gabriela Morin</h3>
+                <p>• Especialidad: Inteligencia Artificial y Aprendizaje Automático</p>
+                <p>• Publicación destacada: Ramírez, A. (2023). Aplicaciones de Deep Learning en diagnóstico médico. Editorial Alfaomega.</p>
+                <p>• Institución: Instituto Tecnológico de Monterrey, México.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="d-block w-100 rounded" src="p2.jpeg" alt="Second slide">
+            </div>
+            <div class="col-md-6 carousel-text">
+              <div>
+                <h3>Armando Lopez Jimenez</h3>
+                <p>• Especialidad: Ciberseguridad y Criptografía</p>
+                <p>• Publicación destacada: Hernández, S. (2022). Nuevos protocolos de seguridad para redes 5G. IEEE Latin America Transactions.</p>
+                <p>• Institución: Universidad Nacional Autónoma de México (UNAM).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="d-block w-100 rounded" src="p3.jpeg" alt="Third slide">
+            </div>
+            <div class="col-md-6 carousel-text">
+              <div>
+                <h3>Esteban Tonatiuh Guzman</h3>
+                <p>• Especialidad: Robótica y Automatización Industrial</p>
+                <p>• Publicación destacada: Gutiérrez, C. (2024). Robots colaborativos en la manufactura moderna. Springer.</p>
+                <p>• Institución: Universidad Politécnica de Valencia, España.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="d-block w-100 rounded" src="p4.jpeg" alt="Fourth slide">
+            </div>
+            <div class="col-md-6 carousel-text">
+              <div>
+                <h3>Alejandro Mireles Hernandez</h3>
+                <p>• Especialidad: Ciencia de Datos y Big Data en Educación</p>
+                <p>• Publicación destacada: Fernández, L. (2021). Análisis predictivo para mejorar el rendimiento académico. Elsevier.</p>
+                <p>• Institución: Universidad de Buenos Aires, Argentina.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="d-block w-100 rounded" src="p5.jpeg" alt="Fifth slide">
+            </div>
+            <div class="col-md-6 carousel-text">
+              <div>
+                <h3>Fernanda Gomez Arreola</h3>
+                <p>• Especialidad: Biotecnología e Inteligencia Artificial aplicada</p>
+                <p>• Publicación destacada: López, J. (2020). Modelos de IA en la optimización de cultivos agrícolas. Nature Biotechnology.</p>
+                <p>• Institución: Universidad de São Paulo, Brasil.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="d-block w-100 rounded" src="p6.jpeg" alt="Sixth slide">
+            </div>
+            <div class="col-md-6 carousel-text">
+              <div>
+                <h3>Osvaldo Rodriguez Rodriguez</h3>
+                <p>• Especialidad: Realidad Aumentada y Educación Digital</p>
+                <p>• Publicación destacada: Torres, M. (2023). La RA como herramienta de aprendizaje en STEM. Journal of Educational Technology.</p>
+                <p>• Institución: Massachusetts Institute of Technology (MIT), EE. UU.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botones -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="mb-3">
+      <a href="https://facebook.com" class="social-icon facebook"></a>
+      <a href="https://twitter.com" class="social-icon twitter"></a>
+      <a href="https://instagram.com" class="social-icon instagram"></a>
+    </div>
+    <p>© 2025 Investigadores</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
